@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+body{
+	line-height:1.5;
+	font-family: 'Poppins', sans-serif;
+    
+    background-color: #36beb3;
+    
+}
+
+header{
+    background: #008075;
+    width: 100%;
+    position: left;
+    z-index: 15;
+    padding:15px;/*espacio*/
+}
+
+.h1{
+ font-size: 25px;
+ color: aliceblue;  
+ position: absolute;
+ padding: 20px 50px;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    overflow:hidden;
+    width: 100%;
+    text-decoration: none;
+    
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;/* Limpiamos errores de float */
+    color: aliceblue;
+    float: right;
+    margin-right: 20px;
+   
+  }
+  
+
+nav ul li{
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 18px; /*especifica el tamaño de la letra*/
+    padding: 20px;
+}
+
+nav ul li a{
+    display: block;/* Convertimos los elementos a en elementos bloque para manipular el padding */
+   text-decoration: none;
+   color: #ffffff;
+    
+}
+
+/*galeria*/
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+  }
+
+
+h2{
+    text-align: center;
+    margin: 2%;
+    padding: 0%;
+    font-size: 35px;
+    color: aliceblue;
+
+}
+
+h3{
+    padding: 8px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position:relative;
+    width:260px;
+    box-shadow: 0 11px 10px 0 rgba(0,0,0,0.2);
+  font-size: 25px;
+  background-color: #049286;
+  border-radius: 30px;
+}
+
+h4{    padding: 8px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position:relative;
+  width:370px;
+  box-shadow: 0 11px 10px 0 rgba(0,0,0,0.2);
+font-size: 25px;
+background-color: #049286;
+border-radius: 30px;}
+
+h5{
+  text-align: center;
+
+  padding: 0%;
+  font-size: 35px;
+  color: aliceblue;
+}
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+     }
+  
+.todo{
+    margin: 3%;
+    padding: 0%;
+    text-align: center;
+    position:relative;
+    width:350px;  /*acomodar imagenes imagen*/
+    box-shadow: 0 11px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    font-size: 20px;
+  background-color: #049286;
+  }
+  
+  
+  .todo:hover { box-shadow: 0 20px 30px 0 rgba(0,0,0,0.2); /*al pasar el mause quite lo negro*/
+  }
+
+  p img{ /* tamañno de imagenes*/
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 30px; /* para hacerlo tipo circulo*/
+  }
+
+  .buttons { /* botton de ingresar*/
+    width: 40%;
+    height: 40px;
+    background: #cacaca;
+    transition-duration: 0.5s;
+    color: #000000;
+    margin-bottom:16px;
+    border-radius: 30px;
+  }
+
+  /*footer*/
+  footer{
+    width: 100%;
+    padding: 2px 0px;
+    background-color: #008075;
+    
+  }
+
+.container__footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto; 
+}
+
+.box__footer{ /*abajo de los titulos*/
+    display: flex;
+    flex-direction: column; /*columna abajo*/
+    padding: 20px;/*espaciado*/
+}
+
+.titufi{
+       color: #ffffff;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+       font-size: 35px;
+      }
+
+.box__footer .terms{/*donde va la historia de la empresa*/
+    max-width: 350px;/*tamaño del espacio letras*/
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.box__footer h2{/*compañia*/
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.box__footer a{/*texto compañia*/
+    margin-top: 5px;
+    color: #000000;
+    font-weight: 600;/*tipo negrilla*/
+    text-align: center;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{/*texxto redes*/
+    font-size: 5px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 10px;
+    color: #000000;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #000000;
+}
+
+
+
+/*Iniciar sesion*/
+
+.container{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.login-container{
+  display: flex;
+  width: 650px;
+  height: auto;
+  background: #008075;
+  box-shadow: 0 9px 9px 0 rgba(0,0,0,0.2);
+}
+
+.register .login{
+    flex: 1;
+}
